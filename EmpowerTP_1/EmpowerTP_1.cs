@@ -56,7 +56,8 @@ namespace EmpowerTP_1
 	using System.Globalization;
 	using System.Text;
 	using Skyline.DataMiner.Automation;
-	
+	using Skyline.DataMiner.Core.DataMinerSystem.Automation;
+
 	/// <summary>
 	/// Represents a DataMiner Automation script.
 	/// </summary>
@@ -68,7 +69,12 @@ namespace EmpowerTP_1
 		/// <param name="engine">Link with SLAutomation process.</param>
 		public void Run(IEngine engine)
 		{
-			engine.GenerateInformation("Hello Thomas");
+			var dms = engine.GetDms();
+
+			foreach (var element in dms.GetElements())
+			{
+				engine.GenerateInformation(element.Name);
+			}
 		}
 	}
 }
