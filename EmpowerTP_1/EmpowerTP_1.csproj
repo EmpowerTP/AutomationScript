@@ -56,11 +56,17 @@
     <PackageReference Include="SharpZipLib">
       <Version>0.86.0</Version>
     </PackageReference>
+    <PackageReference Include="Skyline.DataMiner.Core.DataMinerSystem.Automation">
+      <Version>1.1.0.2</Version>
+    </PackageReference>
     <PackageReference Include="Skyline.DataMiner.Dev.Automation">
       <Version>10.1.0.6</Version>
     </PackageReference>
     <PackageReference Include="Skyline.DataMiner.Dev.Common">
       <Version>10.1.0.6</Version>
+    </PackageReference>
+    <PackageReference Include="Skyline.DataMiner.Empower.Library.Room1">
+      <Version>1.0.4</Version>
     </PackageReference>
     <PackageReference Include="Skyline.DataMiner.Files.protobufnet">
       <Version>10.1.0.6</Version>
@@ -92,7 +98,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties DisLinkId="1" DisProjectType="automationScriptProject" DisLinkedXmlFile="..\EmpowerTP.xml" />
+      <UserProperties DisLinkedXmlFile="..\EmpowerTP.xml" DisProjectType="automationScriptProject" DisLinkId="1" />
     </VisualStudio>
   </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
