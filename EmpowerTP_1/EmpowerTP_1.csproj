@@ -66,7 +66,7 @@
       <Version>10.1.0.6</Version>
     </PackageReference>
     <PackageReference Include="Skyline.DataMiner.Empower.Library.Room1">
-      <Version>1.0.4</Version>
+      <Version>1.0.5</Version>
     </PackageReference>
     <PackageReference Include="Skyline.DataMiner.Files.protobufnet">
       <Version>10.1.0.6</Version>
